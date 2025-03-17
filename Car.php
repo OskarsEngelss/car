@@ -7,7 +7,7 @@ class Car {
     public $color;
     public $brand;
     private $releaseYear;
-    public $propulsionType;
+    private $propulsionType;
     public $tires = [];
     public $propulsionSystems = [];
 
