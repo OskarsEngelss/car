@@ -23,11 +23,11 @@ class Car {
         
 
         if ($this->propulsionType == "ICE") {
-            $propulsionSystems = [new ICEngine($color, $brand, $releaseYear, $propulsionType, 2, 4)];
+            $this->propulsionSystems = [new ICEngine($color, $brand, $releaseYear, $propulsionType, 2, 4)];
         } else if ($this->propulsionType == "Electric") {
-            $propulsionSystems = [new ElectricMotor($color, $brand, $releaseYear, $propulsionType)];
+            $this->propulsionSystems = [new ElectricMotor($color, $brand, $releaseYear, $propulsionType)];
         } else if ($this->propulsionType == "Hybrid") {
-            $propulsionSystems = [new ICEngine($color, $brand, $releaseYear, $propulsionType, 2, 4), new ElectricMotor($color, $brand, $releaseYear, $propulsionType)];
+            $this->propulsionSystems = [new ICEngine($color, $brand, $releaseYear, $propulsionType, 2, 4), new ElectricMotor($color, $brand, $releaseYear, $propulsionType)];
         }
     }
 
